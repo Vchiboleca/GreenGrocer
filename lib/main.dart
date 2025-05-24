@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:greengrocer/src/config/custom_colors.dart';
+import 'package:greengrocer/src/pages/auth/components/card/card_product.dart';
+import 'package:greengrocer/src/pages/auth/components/input/splash/splash_screen.dart';
 import 'src/pages/auth/sign_in_screen.dart';
 
 void main() {
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor:CustomColors.greenMain),
         scaffoldBackgroundColor: Colors.white.withAlpha(190),
         primarySwatch: Colors.green,
         primaryColor: Colors.green,
@@ -23,10 +26,10 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+          style: ElevatedButton.styleFrom(backgroundColor: CustomColors.greenMain),
         ),
       ),
-      home: const SignInScreen(),
+      home:   const SplashScreen(),
     );
   }
 }

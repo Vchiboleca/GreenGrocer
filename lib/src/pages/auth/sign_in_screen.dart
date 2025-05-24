@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:greengrocer/src/pages/auth/sign_up_screen.dart';
 import 'package:greengrocer/src/pages/base/base_screen.dart';
 import 'package:greengrocer/src/config/custom_colors.dart';
-import 'components/costum_text_field.dart';
+import 'components/input/costum_text_field.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -41,7 +41,7 @@ class SignInScreen extends StatelessWidget {
                           TextSpan(
                             text: 'grocer',
                             style: TextStyle(
-                              color: CustomColors.customContrastColor,
+                              color: CustomColors.greenMain,
                             ),
                           ),
                         ],
@@ -169,7 +169,7 @@ class SignInScreen extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18),
                           ),
-                          side: const BorderSide(width: 2, color: Colors.green),
+                          side: BorderSide(width: 2, color: CustomColors.greenMain),
                         ),
                         onPressed: () {
                           Navigator.of(context).push(
