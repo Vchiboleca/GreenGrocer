@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greengrocer/src/config/custom_colors.dart';
-import 'package:greengrocer/src/pages/auth/components/card/card_product.dart';
-import 'package:greengrocer/src/pages/auth/components/input/splash/splash_screen.dart';
-import 'src/pages/auth/sign_in_screen.dart';
+import 'package:greengrocer/src/pages/auth/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
